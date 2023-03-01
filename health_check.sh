@@ -13,6 +13,3 @@ if [ "$res" == "ok" ]; then
 echo "Failed curl to /health"
 
 exit 1
-
-# to keep it executble on windows run:
-# chmod u+x health_check.sh
