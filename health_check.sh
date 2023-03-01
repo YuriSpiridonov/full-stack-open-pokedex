@@ -1,6 +1,7 @@
 #!/bin/bash
 
-res=$(curl -s https://pokedex-fso.fly.dev/health)
+# res=$(curl -s https://pokedex-fso.fly.dev/health)
+res=$(curl -s http://localhost:5000/health)
 
 # 0: success, 1: fail.
 
