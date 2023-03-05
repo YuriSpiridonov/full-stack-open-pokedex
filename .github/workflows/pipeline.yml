@@ -27,13 +27,9 @@ jobs:
       - name: test
         run: npm run test
       - name: e2e test
-        uses: cypress-io/github-action@v4 # v2 v4
+        uses: cypress-io/github-action@v4
         with:
           command: npm run test:e2e
           build: npm run build
           start: npm run start-prod
           wait-on: http://localhost:5000
-      # - name: deploy to fly.io
-      #   run: flyctl deploy --remote-only
-      #   env:
-      #     FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
