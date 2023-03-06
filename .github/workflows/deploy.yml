@@ -47,7 +47,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
-  notification:
+  deploy_notification:
     needs: [deploy]
     runs-on: ubuntu-20.04
     - name: The deploy has succeeded
